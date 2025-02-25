@@ -1,0 +1,1 @@
+# These files will be used to hold the tests that will be ran on the lambda. If you are hitting the Lambda by running tests from another repository, this folder may not be necessary for you
