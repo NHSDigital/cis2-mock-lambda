@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project provides a mock server for simulating API requests and responses using AWS Lambda functions, primarily for performance testing purposes. The structure of the project is set up so that it can be reused for other API endpoints and by taking advantage of tools, templates and code already built, the time to build a new mock will be significantly decreased.
+This project provides a mock server for simulating API requests and responses that would usually be hitting the CIS2 endpoints using AWS Lambda functions for performance testing purposes. The lambda will be accessed by running the tests in the local-test environment, the requests will go through the API Gateway to authorise and protect the Lambdas.
 
 ## Table of Contents
 
@@ -13,7 +13,6 @@ This project provides a mock server for simulating API requests and responses us
     - [Prerequisites](#prerequisites)
     - [Configuration](#configuration)
   - [Usage](#usage)
-    - [CIS2 Mock](#cis2-mock)
     - [Testing](#testing)
   - [Design](#design)
   - [Contributing](#contributing)
@@ -64,10 +63,6 @@ make config
 ```
 
 ## Usage
-
-To use the mock stub locally you must have the docker container running. Here are some examples of requests to access the endpoints in this repository:
-
-### CIS2 Mock
 
 To access the API endpoints using Guzzle HTTP client in PHP, follow these steps
 
